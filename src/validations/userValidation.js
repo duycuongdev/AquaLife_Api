@@ -19,9 +19,9 @@ const userSchema = Joi.object({
     'any.required': '"password" là bắt buộc.'
   }),
   role: Joi.string().valid('customer', 'admin').optional(),
-  imageUrl: Joi.string().uri().optional().messages({
-    'string.uri': '"imageUrl" phải là một URL hợp lệ.'
-  }),
+  imageUrl: Joi.string().optional().allow(''),
+  phone: Joi.string().optional().allow(''),
+  address: Joi.string().optional().allow(''),
   otp: Joi.string().length(6).required().messages({
     'string.length': '"otp" phải gồm 6 ký tự.',
     'any.required': '"otp" là bắt buộc.'
@@ -38,7 +38,15 @@ const createNew = async (req, res, next) => {
 }
 
 const updateById = async (req, res, next) => {
-  const updateSchema = userSchema.fork(['password'], (schema) => schema.optional())
+  const updateSchema = Joi.object({
+    name: Joi.string().min(2).max(100).optional(),
+    email: Joi.string().email().optional(),
+    password: Joi.string().min(10).max(128).optional(),
+    role: Joi.string().valid('customer', 'admin').optional(),
+    imageUrl: Joi.string().optional().allow(''),
+    phone: Joi.string().optional().allow(''),
+    address: Joi.string().optional().allow('')
+  })
   try {
     await updateSchema.validateAsync(req.body, { abortEarly: false })
     next()

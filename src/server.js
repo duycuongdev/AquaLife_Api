@@ -43,7 +43,7 @@ const globalLimiter = rateLimit({
  */
 const authLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 phút
-  max: 20,                   // Chỉ 20 lần thử auth / 15 phút (ngăn brute force)
+  max: 200,                  // Tăng lên 200 để tiện cho việc test local
   standardHeaders: true,
   legacyHeaders: false,
   message: {
@@ -67,8 +67,8 @@ const START_SERVER = () => {
   // Đọc cookies từ request
   app.use(cookieParser())
 
-  // Rate limiting toàn cục: áp dụng cho tất cả routes
-  app.use(globalLimiter)
+  // Rate limiting toàn cục: đã tắt theo yêu cầu
+  // app.use(globalLimiter)
 
   // ─── Middleware Parse Body ────────────────────────────────────────────────
   // Parse JSON body (Content-Type: application/json)
@@ -77,8 +77,8 @@ const START_SERVER = () => {
 
   // ─── Routes ───────────────────────────────────────────────────────────────
 
-  // Áp dụng auth limiter riêng cho các endpoints đăng nhập/đăng ký
-  app.use('/v1/auth', authLimiter)
+  // Áp dụng auth limiter riêng cho các endpoints đăng nhập/đăng ký: đã tắt theo yêu cầu
+  // app.use('/v1/auth', authLimiter)
 
   // Mount tất cả API v1 routes
   app.use('/v1', APIs_V1)

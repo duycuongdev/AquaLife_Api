@@ -1,0 +1,88 @@
+[
+  {
+    "_id": "6aa6fdd2b86f389cd54b4443",
+    "userId": "6a578325b72c04b068ae82a0",
+    "address": "12 ngõ 109 Sở Thượng Hoàng Mai Hà Nội",
+    "totalPrice": 155000,
+    "status": "Đã xác nhận",
+    "note": null,
+    "createdAt": "2026-09-13T19:47:30.144Z",
+    "updatedAt": "2026-09-13T19:47:30.485Z"
+  },
+  {
+    "_id": "6aa6fa1396a4d9f072603755",
+    "userId": "6a578325b72c04b068ae82a0",
+    "address": "12 Sở Thượng Hoàng Mai Hà Nội",
+    "totalPrice": 150000,
+    "status": "Đã xác nhận",
+    "note": null,
+    "createdAt": "2026-09-13T19:31:31.200Z",
+    "updatedAt": "2026-09-13T19:31:31.577Z"
+  },
+  {
+    "_id": "6aa6f98a5db9a4aa79d5f434",
+    "userId": "6a578325b72c04b068ae82a0",
+    "address": "12 Sở Thượng Hoàng Mai Hà Nội",
+    "totalPrice": 150000,
+    "status": "Đã xác nhận",
+    "note": null,
+    "createdAt": "2026-09-13T19:29:14.958Z",
+    "updatedAt": "2026-09-14T02:06:45.956Z"
+  },
+  {
+    "_id": "6aa6f9545db9a4aa79d5f433",
+    "userId": "6a578325b72c04b068ae82a0",
+    "address": "12 ngõ 109 Sở Thượng Hoàng Mai Hà Nội",
+    "totalPrice": 150000,
+    "status": "Đã xác nhận",
+    "note": null,
+    "createdAt": "2026-09-13T19:28:20.971Z",
+    "updatedAt": "2026-09-14T02:06:46.865Z"
+  },
+  {
+    "_id": "6aa6f9535db9a4aa79d5f432",
+    "userId": "6a578325b72c04b068ae82a0",
+    "address": "12 ngõ 109 Sở Thượng Hoàng Mai Hà Nội",
+    "totalPrice": 150000,
+    "status": "Đã xác nhận",
+    "note": null,
+    "createdAt": "2026-09-13T19:28:19.703Z",
+    "updatedAt": "2026-09-14T02:06:47.687Z"
+  },
+  {
+    "_id": "6aa6f9515db9a4aa79d5f431",
+    "userId": "6a578325b72c04b068ae82a0",
+    "address": "12 ngõ 109 Sở Thượng Hoàng Mai Hà Nội",
+    "totalPrice": 150000,
+    "status": "Đang đợi",
+    "note": null,
+    "createdAt": "2026-09-13T19:28:17.509Z"
+  },
+  {
+    "_id": "6aa6f8e15db9a4aa79d5f430",
+    "userId": "6a578325b72c04b068ae82a0",
+    "address": "12 ngõ 109 Sở Thượng Hoàng Mai Hà Nội",
+    "totalPrice": 150000,
+    "status": "Đang đợi",
+    "note": null,
+    "createdAt": "2026-09-13T19:26:25.410Z"
+  },
+  {
+    "_id": "6aa6f8d65db9a4aa79d5f42f",
+    "userId": "6a578325b72c04b068ae82a0",
+    "address": "12 ngõ 109 Sở Thượng Hoàng Mai Hà Nội",
+    "totalPrice": 150000,
+    "status": "Đang đợi",
+    "note": null,
+    "createdAt": "2026-09-13T19:26:14.288Z"
+  },
+  {
+    "_id": "6aa6f8d45db9a4aa79d5f42e",
+    "userId": "6a578325b72c04b068ae82a0",
+    "address": "12 ngõ 109 Sở Thượng Hoàng Mai Hà Nội",
+    "totalPrice": 150000,
+    "status": "Đang đợi",
+    "note": null,
+    "createdAt": "2026-09-13T19:26:12.381Z"
+  }
+]

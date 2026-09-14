@@ -5,8 +5,8 @@ import { OBJECT_ID_RULE, OBJECT_ID_RULE_MESSAGE } from '~/utils/validatiors'
 
 const createNew = async (req, res, next) => {
   const correctCondition = Joi.object({
-    ordersId: Joi.string().pattern(OBJECT_ID_RULE).message(OBJECT_ID_RULE_MESSAGE).required(),
-    productsId: Joi.string().pattern(OBJECT_ID_RULE).message(OBJECT_ID_RULE_MESSAGE).required(),
+    orderId: Joi.string().pattern(OBJECT_ID_RULE).message(OBJECT_ID_RULE_MESSAGE).required(),
+    productId: Joi.string().pattern(OBJECT_ID_RULE).message(OBJECT_ID_RULE_MESSAGE).required(),
     quantity: Joi.number().integer().min(1).required().messages({
       'number.base': '"quantity" phải là số.',
       'number.integer': '"quantity" phải là số nguyên.',

@@ -29,8 +29,10 @@ const USERS_COLLECTION_SCHEMA = Joi.object({
   // Thêm provider để phân biệt nguồn tạo tài khoản
   provider: Joi.string().valid('local', 'google').default('local'),
 
-  // imageUrl: tùy chọn, phải là URI hợp lệ nếu có
-  imageUrl: Joi.string().uri().optional().allow(''), // allow('') vì có thể là empty string
+  // imageUrl: tùy chọn
+  imageUrl: Joi.string().optional().allow(''), // allow('') vì có thể là empty string
+  phone: Joi.string().optional().allow(''),
+  address: Joi.string().optional().allow(''),
 
   refreshToken: Joi.string().allow(null, '').default(null),
 
