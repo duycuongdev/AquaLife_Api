@@ -80,6 +80,9 @@ const START_SERVER = () => {
   // Áp dụng auth limiter riêng cho các endpoints đăng nhập/đăng ký: đã tắt theo yêu cầu
   // app.use('/v1/auth', authLimiter)
 
+  // Route root cho UptimeRobot ping kiểm tra server sống hay chết
+  app.get('/', (req, res) => res.status(200).json({ message: 'API is running' }))
+
   // Mount tất cả API v1 routes
   app.use('/v1', APIs_V1)
 
